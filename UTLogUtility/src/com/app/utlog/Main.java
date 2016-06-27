@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Rectangle2D;
@@ -17,13 +18,16 @@ public class Main extends Application {
 			Rectangle2D primaryScreenBounds = Screen.getPrimary().getVisualBounds();
 			
 			//Step 1 - Load the AnchorPane (Main Screen)
-			AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("screens/RootScreen.fxml"));
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("screens/RootScreen.fxml"));
+			AnchorPane root = (AnchorPane)loader.load();
 			
 			//Step 2 - Setup the scene and add default style CSS
 			Scene scene = new Scene(root,primaryScreenBounds.getWidth(),primaryScreenBounds.getHeight());
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			
 			primaryStage.setTitle("Unit Test Log Utility");
+			primaryStage.getIcons().add(new Image("file:resources/images/UTApp_Main_Icon.png"));
+			primaryStage.setMaximized(true);
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch(Exception e) {
