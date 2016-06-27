@@ -15,9 +15,9 @@
          <top>
             <ToolBar focusTraversable="false" prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <items>
-                  <Button fx:id="btnAdd" focusTraversable="false" mnemonicParsing="false" onAction="#handleNew" text="NEW TEST CASE" />
-                  <Button fx:id="btnEdit" focusTraversable="false" mnemonicParsing="false" text="EDIT TEST CASE" />
-                  <Button fx:id="btnDel" focusTraversable="false" mnemonicParsing="false" onAction="#handledelete" text="DELETE TEST CASE" />
+                  <Button fx:id="btnAdd" focusTraversable="false" mnemonicParsing="false" text="ADD" />
+                  <Button fx:id="btnEdit" focusTraversable="false" mnemonicParsing="false" text="EDIT" />
+                  <Button fx:id="btnDel" focusTraversable="false" mnemonicParsing="false" text="DELETE" />
                </items>
             </ToolBar>
          </top>
