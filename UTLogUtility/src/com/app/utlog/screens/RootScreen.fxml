@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	
+
 <?import javafx.scene.layout.AnchorPane?>
-	
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="UTLogUtility.RootScreenController">
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65" fx:controller="com.app.utlog.screens.RootScreenController">
 	<!-- TODO Add Nodes -->
 </AnchorPane>
